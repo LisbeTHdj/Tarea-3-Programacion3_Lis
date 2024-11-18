@@ -1,0 +1,219 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Pizzería Lisbeth</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #4CAF50;
+        }
+
+        p {
+            text-align: center;
+            color: #555;
+        }
+
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 60px;
+            height: auto;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin: 0 10px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        .navbar ul li a.active {
+            background-color: #4CAF50;
+            border-radius: 5px;
+        }
+
+        .contact-section {
+            padding: 2rem 0;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-item {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .contact-item img {
+            max-width: 50px;
+            margin-bottom: 1rem;
+        }
+
+        .contact-item h3 {
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .navbar ul {
+                flex-direction: column;
+            }
+
+            .navbar ul li {
+                margin: 10px 0;
+            }
+
+            .contact-section {
+                padding: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-item img {
+                max-width: 40px;
+            }
+
+            h1, h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Menú -->
+<header class="header">
+    <div class="menu container">
+        <!-- Logo -->
+        <a href="#" class="logo">
+            <img src="imagenes/pizza.png" alt="Logo" style="max-width: 120px; height: auto;">
+        </a>
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+            <img src="imagenes/menu.png" class="menu-icono" alt="Menú">
+        </label>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+                <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Encabezado con nombre de la Pizzería -->
+    <div class="header-content container">
+        <h1>Pizzería Lisbeth</h1>
+    </div>
+</header>
+
+<!-- Sección de Contacto -->
+<main class="contact-section container">
+    <h1>Contacto</h1>
+    <p>¡Estamos aquí para ayudarte! Si tienes alguna pregunta, no dudes en contactarnos.</p>
+
+    <!-- Información de Contacto -->
+    <section class="contact-info">
+        <div class="contact-item">
+            <img src="imagenes/ubicacion.png" alt="Ubicación">
+            <h3>Dirección</h3>
+            <p>Av. Las Flores 123, San Isidro, santo domingo,RD.</p>
+        </div>
+        <div class="contact-item">
+            <img src="imagenes/telefono.png" alt="Teléfono">
+            <h3>Teléfono</h3>
+            <p>+12 345 678 9999</p>
+        </div>
+        <div class="contact-item">
+            <img src="imagenes/correo.png" alt="Correo electrónico">
+            <h3>Email</h3>
+            <p>contacto@pizzerialisbeth.com</p>
+        </div>
+    </section>
+
+    <h2>Formulario de Contacto</h2>
+    <form action="enviar_contacto.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="asunto">Asunto:</label>
+        <input type="text" id="asunto" name="asunto" required>
+
+        <label for="comentario">Comentario:</label>
+        <textarea id="comentario" name="comentario" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</main>
+
+<!-- Pie de página -->
+<footer class="footer">
+    <div class="container">
+        <p>© Derechos del autor - Pizzería Lisbeth</p>
+    </div>
+</footer>
+
+</body>
+</html>
