@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Pizzería Lisbeth</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            margin-top: 1rem;
+        }
+
+        p {
+            text-align: center;
+            color: #555;
+        }
+
+
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            color: white;
+            text-decoration: none;
+        }
+
+        .logo img {
+            width: 60px;
+            height: auto;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin: 0 10px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        .navbar ul li a.active {
+            background-color: #4CAF50;
+            border-radius: 5px;
+        }
+
+    
+        .services-section {
+            padding: 2rem 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .service-card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .service-card img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            margin: 0.5rem 0;
+            color: #333;
+        }
+
+        .service-card p {
+            color: #555;
+        }
+
+        .service-card .price {
+            color: #4CAF50;
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+    
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+     
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .navbar ul {
+                flex-direction: column;
+            }
+
+            .navbar ul li {
+                margin: 10px 0;
+            }
+
+        }
+    </style>
+</head>
+<body>
+
+<!-- Menú -->
+<header class="header">
+    <div class="menu container">
+        <!-- Logo -->
+        <a href="#" class="logo">
+            <img src="imagenes/pizza.png" alt="Logo">
+        </a>
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+            <img src="imagenes/menu.png" class="menu-icono" alt="Menú">
+        </label>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html" class="active">Servicios</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header-content container">
+        <h1>Pizzería Lisbeth</h1>
+    </div>
+</header>
+
+<!-- Sección de Servicios -->
+<main class="services-section container">
+    <h1>Servicios</h1>
+    <p>Ofrecemos un servicio excepcional en cada uno de nuestros productos. Conoce lo que tenemos para ti.</p>
+
+    <div class="services-grid">
+        <div class="service-card">
+            <img src="imagenes/domicilio.jpg" alt="Delivery">
+            <h3>Delivery</h3>
+            <p>Recibe tu pizza directamente en la puerta de tu casa, ¡siempre caliente!</p>
+            <div class="price">$Precio Supuesto a variacion En base  la ubicacion</div>
+        </div>
+        <div class="service-card">
+            <img src="imagenes/pizzeria.jpeg" alt="Recogida">
+            <h3>Recogida</h3>
+            <p>Pasa por tu pedido y disfrútalo en casa o donde prefieras.</p>
+            <div class="price">$0.00</div>
+        </div>
+    </div>
+</main>
+
+<!-- Pie de página -->
+<footer class="footer">
+    <div class="container">
+        <p>© Derechos de autor - Pizzería Lisbeth</p>
+    </div>
+</footer>
+
+</body>
+</html>
