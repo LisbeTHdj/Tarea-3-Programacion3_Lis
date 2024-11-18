@@ -1,11 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pizzería Lisbeth</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <!-- Menú -->
+<header class="header">
+    <div class="menu container">
+        <!-- Logo -->
+        <a href="#" class="logo">
+            <img src="imagenes/pizza.png" alt="Logo">
+        </a>
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+            <img src="imagenes/menu.png" class="menu-icono" alt="Menú">
+        </label>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html" class="active">Servicios</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header-content container">
+        <h1>Pizzería Lisbeth</h1>
+    </div>
+</header>
+
+    <!-- Sección de pizza-->
+    <section class="pizza">
+        <img class="pizza-img" src="imagenes/peperoni1.png" alt="">
+        <div class="pizza-content container">
+            <h2>Diferentes tipos de Pizza</h2>
+            <p>Disfruta nuestra variedad de pizzas, desde las clásicas hasta las especiales, cada una preparada con
+                ingredientes frescos y auténticos. ¡Hay una pizza para cada paladar!</p>
+            <div class="pizza-group">
+                <div class="pizza-1">
+                    <img src="imagenes/bolonesa1.png" alt="pizza 1">
+                    <h3>BOLOÑESA</h3>
+                    <p>Masa fresca, doble mozzarella, carne jugosa, pimiento y salsa boloñesa. ¡Irresistible!</p>
+                </div>
+                <div class="pizza-1">
+                    <img src="imagenes/pizzapepperoni.png" alt="pizza 2">
+                    <h3>PEPPERONI</h3>
+                    <p>Masa fresca, queso mozzarella, pepperoni crujiente y un toque de orégano. ¡La clásica que siempre
+                        encanta!</p>
+                </div>
+                <div class="pizza-1">
+                    <img src="imagenes/tropixalpizza0.png" alt="pizza 3">
+                    <h3>Tropical</h3>
+                    <p>Masa fresca, doble mozzarella, jamón, piña, melocotón y extra queso. ¡Dulce y salada, simplemente
+                        perfecta!</p>
+                </div>
+            </div>
+            <a href="productos.html" class="btn-1">Más</a>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <main class="services">
+        <div class="services-content container">
+            <h2>Servicios de la Pizzería</h2>
+            <div class="services-group">
+                <div class="servicios-1">
+                    <img src="imagenes/bebidas-sin-alcohol.png" alt="Servicio 1">
+                    <h3>Bebidas</h3>
+                </div>
+                <div class="servicios-1">
+                    <img src="imagenes/magdalena.png" alt="Servicio 2">
+                    <h3>Postres</h3>
+                </div>
+                <div class="servicios-1">
+                    <img src="imagenes/pasta.png" alt="Servicio 3">
+                    <h3>Pasta</h3>
+                </div>
+            </div>
+            <p>Disfruta de nuestras pizzas y más con: servicio a domicilio, pedidos para llevar y opciones para
+                eventos. Personaliza tu pizza con ingredientes frescos, en conjunto con nuestros postres de la mejor
+                calidad.</p>
+            <a href="servicios.html" class="btn-1">Servicios</a>
+        </div>
+    </main>
+
+    <!-- Sección General -->
+    <section class="general">
+        <div class="general-1">
+            <h2>Domicilio</h2>
+            <p>Disfruta de nuestra variedad de sabores desde la comodidad de tu hogar.</p>
+            <a href="productos.html" class="btn-1">Ver</a>
+        </div>
+        <div class="general-2"></div>
+    </section>
+
+    <section class="general">
+        <div class="general-3"></div>
+        <div class="general-1">
+            <h2>Contacto</h2>
+            <p>Contáctanos y cuéntanos tu experiencia en Pizzería Lisbeth, ordena desde donde estés.</p>
+            <a href="contacto.html" class="btn-1">Ver</a>
+        </div>
+    </section>
+
+    <!-- Sección de Blog -->
+    <section class="contenedor-de-blogs">
+        <h2>Blog</h2>
+        <p>Bienvenido a nuestro blog, donde compartimos novedades, recetas y consejos sobre el mundo de la pizza.
+            ¡Explora nuestras entradas y encuentra la inspiración que buscas!</p>
+        <div class="blog-content">
+            <div class="blog-1">
+                <img src="imagenes/catering.jpeg" alt="Blog 1">
+                <h3>Blog 1</h3>
+                <p>Sumérgete en nuestro primer blog, donde exploramos las últimas tendencias en gastronomía y cómo los
+                    sabores del mundo están influyendo en las pizzerías locales. Descubre las recetas más innovadoras y
+                    los secretos para una pizza perfecta.</p>
+            </div>
+            <div class="blog-1">
+                <img src="imagenes/pizzeria.jpeg" alt="Blog 2">
+                <h3>Blog 2</h3>
+                <p>En este blog, compartimos historias inspiradoras de emprendedores que han transformado sus pizzerías
+                    en lugares exitosos. Aprende de sus experiencias, desafíos y consejos para mejorar tu propio negocio
+                    en el mundo de la pizza.</p>
+            </div>
+            <div class="blog-1">
+                <img src="imagenes/empresa.jpeg" alt="Blog 3">
+                <h3>Blog 3</h3>
+                <p>Acompáñanos en este artículo donde analizamos las mejores combinaciones de ingredientes para una pizza
+                    deliciosa. Desde las más tradicionales hasta las más atrevidas, te damos ideas para sorprender a tus
+                    clientes o amigos con sabores únicos.</p>
+            </div>
+        </div>
+        <a href="#" class="btn-1">Información</a>
+    </section>
+
+    <!-- Barra de pie de página -->
+    <footer class="footer">
+        <div class="container-center">
+            <p>© Derechos de autor - Pizzería Lisbeth</p>
+        </div>
+    </footer>
 </body>
+
 </html>
