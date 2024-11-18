@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - Pizzería Lisbeth</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+  
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #4CAF50;
+        }
+
+        p {
+            text-align: justify;
+            color: #555;
+            line-height: 1.6;
+        }
+
+      
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+        }
+
+        .header-content h1 {
+            font-size: 75px;
+            line-height: 80px;
+            color: #f9fafc;
+            text-transform: uppercase;
+            margin-bottom: 35px;
+        }
+
+        .header-content p {
+            font-size: 16px;
+            color: #c5c5c5;
+            padding: 0 250px;
+            margin-bottom: 25px;
+        }
+
+        .btn-1 {
+            display: inline-block;
+            padding: 11px 35px;
+            background-color: #ce9678;
+            color: #f9fafc;
+            text-transform: uppercase;
+            margin: 0 auto; 
+
+        .btn-1:hover {
+            background-color: #ebad8d;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            color: white;
+            text-decoration: none;
+        }
+
+        .logo img {
+            width: 60px;
+            height: auto;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin: 0 10px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        .navbar ul li a.active {
+            background-color: #4CAF50;
+            border-radius: 5px;
+        }
+
+
+        .about-section {
+            padding: 2rem 0;
+        }
+
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .about-image {
+            flex: 1 1 45%;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .about-text {
+            flex: 1 1 45%;
+        }
+
+        .mission-vision {
+            margin-top: 2rem;
+        }
+
+        .mission-vision h2 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .mission-vision p {
+            margin-bottom: 1rem;
+        }
+
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .navbar ul {
+                flex-direction: column;
+            }
+
+            .navbar ul li {
+                margin: 10px 0;
+            }
+
+            .about-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .about-image, .about-text {
+                flex: 1 1 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Menú -->
+<header class="header">
+    <div class="menu container">
+        <!-- Logo -->
+        <a href="#" class="logo">
+            <img src="imagenes/pizza.png" alt="Logotipo">
+        </a>
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+            <img src="imagenes/menu.png" class="menu-icono" alt="Menú">
+        </label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="productos.html" class="active">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="header-content container">
+        <h1>Pizzería Lisbeth</h1>
+    </div>
+</header>
+
+<!-- Sección Sobre Nosotros -->
+<main class="about-section container">
+    <h1>Sobre Nosotros</h1>
+    <div class="about-content">
+        <div class="about-image">
+            <img src="imagenes/pizzeria.jpeg" alt="Sobre Nosotros">
+        </div>
+        <div class="about-text">
+            <p>En Pizzería Lisbeth nos especializamos en ofrecer las mejores pizzas y platos italianos en la ciudad. Con ingredientes frescos y recetas tradicionales, nos esforzamos por brindar una experiencia culinaria única para todos nuestros clientes.</p>
+            <div class="mission-vision">
+                <h2>Misión</h2>
+                <p>Brindar alimentos de calidad, con el mejor servicio, en un ambiente acogedor y familiar.</p>
+                <h2>Visión</h2>
+                <p>Ser reconocidos como la pizzería favorita en nuestra comunidad, ofreciendo siempre lo mejor.</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>© Derechos del autor - Pizzería Lisbeth</p>
+    </div>
+</footer>
+
+</body>
+</html>
