@@ -1,0 +1,269 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Pizzería Lisbeth</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            margin-top: 1rem;
+        }
+
+        p {
+            text-align: center;
+            color: #555;
+        }
+
+      
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+        }
+        .header-content {
+    text-align: center;
+    width: 100%;
+}
+
+.header-content h1 {
+    font-size: 75px;
+    line-height: 80px;
+    color: #f9fafc;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p {
+    font-size: 16px;
+    color: #c5c5c5;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #ce9678;
+    color: #f9fafc;
+    text-transform: uppercase;
+    margin: 0 auto; 
+
+.btn-1:hover {
+    background-color: #ebad8d;
+}
+
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            color: white;
+            text-decoration: none;
+        }
+
+        .logo img {
+            width: 60px;
+            height: auto;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin: 0 10px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        .navbar ul li a.active {
+            background-color: #4CAF50;
+            border-radius: 5px;
+        }
+
+      
+        .products-section {
+            padding: 2rem 0;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .product-card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product-card img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .product-card h3 {
+            margin: 0.5rem 0;
+            color: #333;
+        }
+
+        .product-card p {
+            color: #555;
+        }
+
+        .product-card .price {
+            color: #4CAF50;
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+  
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+    
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .navbar ul {
+                flex-direction: column;
+            }
+
+            .navbar ul li {
+                margin: 10px 0;
+            }
+
+            .products-section {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Menú -->
+<header class="header">
+    <div class="menu container">
+         <!-- Logo -->
+         <a href="#" class="logo">
+            <img src="imagenes/pizza.png" alt="Logo">
+        </a>
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+            <img src="imagenes/menu.png" class="menu-icono" alt="Menú">
+        </label>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="productos.html" class="active">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header-content container">
+        <h1>Pizzería Lisbeth</h1>
+
+    </div>
+</header>
+
+<!-- Sección de Productos -->
+<main class="products-section container">
+    <h1>Nuestros Productos</h1>
+    <p>Explora nuestras deliciosas pizzas, pastas y más. ¡Perfectas para cualquier ocasión!</p>
+
+    <div class="products-grid">
+        <div class="product-card">
+            <img src="imagenes/Pizza Margarita.jpeg" alt="Pizza Margarita">
+            <h3>Pizza Margarita</h3>
+            <p>Una clásica pizza italiana con tomate, mozzarella y albahaca.</p>
+            <div class="price">$500.00</div>
+        </div>
+        <div class="product-card">
+            <img src="imagenes/pizzapepperoni.png" alt="Pizza Pepperoni">
+            <h3>Pizza Pepperoni</h3>
+            <p>Deliciosa pizza cubierta con abundante pepperoni y queso fundido.</p>
+            <div class="price">$450.00</div>
+        </div>
+        <div class="product-card">
+            <img src="imagenes/Pasta Carbonara.jpeg" alt="Pasta Carbonara">
+            <h3>Pasta Carbonara</h3>
+            <p>Un plato cremoso con panceta, huevo y queso parmesano.</p>
+            <div class="price">$400.00</div>
+        </div>
+        <div class="product-card">
+            <img src="imagenes/tiramisu.jpeg" alt="Tiramisú">
+            <h3>Tiramisú</h3>
+            <p>Un postre italiano clásico con café, mascarpone y cacao.</p>
+            <div class="price">$600.00</div>
+        </div>
+        <div class="product-card">
+            <img src="imagenes/bolonesa1.png" alt="Tiramisú">
+            <h3>Bolonesa</h3>
+            <p>Una pizza clásica inspirada en el tradicional ragú italiano, con una base de salsa de tomate, 
+                carne molida, especias italianas y queso fundido.</p>
+            <div class="price">$800.00</div>
+        </div>
+        <div class="product-card">
+            <img src="imagenes/tropixalpizza0.png" alt="Tiramisú">
+            <h3>Tropical</h3>
+            <p>Una pizza exótica que combina el dulzor de la piña con el sabor salado del jamón,
+                 cubierta de queso fundido sobre una base de salsa de tomate..</p>
+            <div class="price">$800</div>
+        </div>
+    </div>
+</main>
+
+<!-- Barra de pie de página -->
+<footer class="footer">
+    <div class="container">
+        <p>© Derechos de autor - Pizzería Lisbeth</p>
+    </div>
+</footer>
+
+</body>
+</html>
